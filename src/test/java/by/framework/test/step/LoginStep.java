@@ -26,6 +26,8 @@ public class LoginStep extends AbstractStep{
 
     @Given("^I navigated to the Gmail page$")
     public void iNavigatedToTheGmailPage() {
+        System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver.exe");
+        Configuration.browser = "chrome";
         loginPage.openGmailPage();
     }
 
